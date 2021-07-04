@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my responsive website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+    <nav class="navbar background h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <div class="logo"><img src="img/wolf.png" alt="logo"></div>
+
+            <li><a href="#" class="hitbtn1">Home</a></li>
+            <li><a href="#" class="hitbtn2">About Us</a></li>
+            <li><a href="#services" class="hitbtn3">Services</a></li>
+            <li><a href="#contact" class="hitbtn4">Contact Us</a></li>
+            <!-- href stores id. this means that clicking on the anchor text will take me to a point within the webpage marked by id="given id". -->
+        </ul>
+
+        <div class="rightNav v-class-resp">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+
+        </div>
+    </nav>
+
+    <!-- <div class="image">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, soluta!
+    </div> -->
+    <!-- img and background image are 2 different things. don't consider them to be same. one of them is placed as a next element after certain elements in the div in the foreground. other one is placed in the background -->
+
+    <section class="background firstSection">
+        <div class="box-main">
+
+            <div class="firstHalf">
+                <p class="text-big">
+                    coder's club
+                </p>
+                <p class="text-small">
+                    Welcome to the coders club. We are so happy to have you with us. This marks the first day of your
+                    new beginning.
+                    Enroll now and become a great coder. Fill the form below.
+                </p>
+
+                <div class="buttons">
+                    <button class="btn">Subscribe</button>
+                    <button class="btn">Watch Video</button>
+
+                </div>
+            </div>
+
+            <div class="secondHalf">
+                <img src="img/code2.jpg" alt="facebook image">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="secRight" id="services">
+        <div class="paras">
+            <p class="sectionTag text-big">your search ends here :)</p>
+            <p class="sectionSubTag text-small">
+                <b><i>"Great things are done by a series of small things brought together".</b></i><br><br><br>
+
+                Being Coding Club of a technical institution, we do pretty much everything and anything related to
+                coding. Coding events, Workshops, Hackathons (48 hours non stop coding), contests are just to name a
+                few. We believe in coding our problems away.
+            </p>
+        </div>
+        <div class="thumbnail">
+            <img src="img/wallpaperflare-cropped.jpg" alt="wolf image" class="imgFluid">
+        </div>
+
+    </section>
+
+    <section class="contactform" id="contact">
+        <h1>contact form</h1>
+        <input type="text" placeholder="name">
+        <input type="text" placeholder="phone number">
+        <input type="text" placeholder="email address">
+        <input type="text" placeholder="any concern" style="height: 20vh;">
+        <button class="btn">submit</button>
+    </section>
+
+    <div class="footer">
+        <p>coders club jiit noida</p>
+        <br>
+        <p>copyright | 2021</p>
+    </div>
+    <script src="js/resp.js"></script>
+</body>
+
+</html>
